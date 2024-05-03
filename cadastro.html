@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	
+	<!--Título-->
+	<head>
+		<title> Cadastre-se</title>
+		<meta name="escription" content="Parque de diversões AdventureLand">
+		<meta name="keywords" content="parques,diversão,passeio,cadastro,login">
+		
+		<!--Flavicon-->
+		<link rel='icon'
+				href='imagens/flavicon.webp'
+				sizes='48x48'/>
+		<center><h1>Cadastre-se</h1></center>
+	</head>
+	<hr>
+	
+	<!--Corpo-->
+	<body>
+		<!--Lista de funções-->
+		<table width='100%s'>
+			<tr>
+				<td> <a href='index.html'> <strong> Home </a> </td>
+				<td> <a href='sobreoparque.html'> <strong> Sobre o parque </a> </td>
+				<td> <a href='atracoes.html'> <strong> Atrações </a> </td> 
+				<td> <a href='passaporte.html'> <strong> Passaportes </a> </td> 
+				<td> <a href='calendario.html'> <strong> Calendário </a> </td> 
+				<td> <a href='fale_conosco.html'> <strong> Fale conosco </a> </td>
+			</tr>				
+		</table><br>
+		
+		<!--Formulário para cadastro-->
+		
+		<h2> Formúlario para cadastro</h2>
+		
+		<form action="#" method="GET">
+		<table width='50%'>
+		<tr>
+			<td>
+				<label for='nome'>Nome:</label><br>
+				<input type='text' id='nome'  name='nome' required minlength='3' required maxlength='50' placeholder='Digite seu nome'><br>
+			</td>
+			<td>
+				<label for='cpf'>CPF:</label><br>
+				<input type='text' id='cpf'  name='CPF' pattern='\d{3}\.\d{3}\.\d{3}\-\d{2}' required placeholder='000.000.000-00'> </input><br>
+			</td>
+			<td>
+				<label for='idade'>Idade:</label><br>
+				<input type='number' id='idade' name='idade' min='18' max='120' placeholder='Sua idade'><br>
+			</td>
+			<td>
+				<label for='genero'>Gênero:</label></br>
+				<select id='genero' name='genero' required>
+						<option value='selecione'>Selecione...</option>
+						<option value='Masculino'>Masculino</option>
+						<option value='Feminino'>Feminino</option>
+						<option	value='Outro'>Outro</option>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for='email'>Email:</label><br>
+				<input type='text' id='email' name='email' required minlength='6' required maxlength='50' placeholder='Digite seu email'><br>
+			</td>
+			
+			<td>	
+				<label for='telefone'>Telefone:</label><br>
+				<input type='text' id='telefone' name='telefone' required minlength='11' required maxlength='16' placeholder='Digite seu telefone'><br>
+			</td>
+			<td>
+				<label for='data_nascimento'>Data de nascimento:</label><br>
+				<input type='date' id='data_nascimento' name='data_nascimento' required><br>
+			
+			</td>
+			<td>
+				<label for='rg'>RG:</label><br>
+				<input type='text' id='rg' name='rg' required minlength='6' required maxlength='10' placeholder='Apenas números'>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label for='estado'>Estado:</label><br>
+				<select id='estado' name='estado' required>
+							<option value='selecione'>Selecione...</option>
+							<option value='AC'>Acre</option>
+							<option value='BA'>Bahia</option>
+							<option value='GO'>Goiás</option>
+							<option value='MA'>Maranhão</option>
+							<option value='MG'>Minas Gerais</option>
+							<option value='RJ'>Rio de Janeiro</option>
+							<option value='SC'>Santa Catarina</option>
+							<option value='SP'>São Paulo</option>		
+			</td>
+			<td>
+				<label for='cep'>Cep:</label><br>
+				<input type='text' id='cep' name='cep' pattern='[0-9]{8}' placeholder='Digite seu cep, apenas números'><br>
+			<td>
+				<label for='cidade'>Cidade:</label><br>
+				<input type='text' id='cidade' name='cidade' required minlength='3' required maxlength='50' placeholder='Digite sua cidade'><br>				
+			</td>
+			<td>
+				<label for='endereço'>Endereço:</label><br>
+				<input type='text' id='endereço' name='endereço' required minlength='1' required maxlength='50' placeholder='Digite seu endereço'><br>
+			</td>
+		<tr>
+			<td>
+				<label for="senha">Senha:</label><br>
+				<input type="password" id="senha" name="senha" required minlength="8"><br>
+			</td>
+			
+			<td>
+				<label for="confirmar_senha">Confirmar Senha:</label><br>
+				<input type="password" id="confirmar_senha" name="confirmar_senha" required minlength="8"><br>
+
+			</td>
+			
+		</tr>
+	</table>		
+	</form>	
+		
+		<input type="submit" value="Enviar"><br><br>
+		
+		<!--Botão voltar-->
+		<h3><a href='index.html'><center>Voltar para página inicial</center></a></h3>
+	</body>
+	
+</html>

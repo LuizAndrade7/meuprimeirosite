@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<!--Botões de cadastro e login-->
+	<table align='right'>
+		<tr>
+			<td><a href='cadastro.html'><button>Cadastre-se</button></a></td>
+		</tr>
+				
+		<tr>
+			<td><a href='login.html'><button>Efetuar Login</button></a></td>
+		</tr>
+	</table>
+	
+	<head>
+		<title> Fale conosco</title>
+		<meta name="escription" content="Parque de diversões AdventureLand">
+		<meta name="keywords" content="parques,diversão,passeio,fale,ouvidoria">
+		
+		<!--Flavicon-->
+		<link rel='icon'
+					href='imagens/flavicon.webp'
+					sizes='48x48'/>
+		<h1><center> Fale conosco </center></h1></h1>
+	</head>
+	<hr>
+
+	<!--Lista de funções-->
+	<table width='100%s'>
+		<tr>
+			<td> <a href='index.html'> <strong> Home </a> </td>
+			<td> <a href='sobreoparque.html'> <strong> Sobre o parque </a> </td>
+			<td> <a href='atracoes.html'> <strong> Atrações </a> </td> 
+			<td> <a href='passaporte.html'> <strong> Passaportes </a> </td> 
+			<td> <a href='calendario.html'> <strong> Calendário </a> </td> 
+			<td> <a href='fale_conosco.html'> <strong> Fale conosco </a> </td>				
+		</tr>				
+	</table>
+		
+	<!--Corpo-->	
+	<body>
+		<formaction='#' method='get' >
+		<h2>Fale conosco</h2>
+		
+		<label for='Nome'>Nome:</label><br>
+		<input type="text" id="nome" name="nome" required minlength="3" maxlength="50" placeholder="Digite seu nome"><br>
+		
+		<label for='email'>Email:</label><br>
+		<input type='text' id='email' name='email' required minlength='6' maxlength='50' placeholder='Digite seu email'><br>
+		
+		<label for='telefone'>Telefone:</label><br>
+		<input type='text' id='telefone' name='telefone' required minlength='8' maxlength='16' placeholder='Digite seu telefone'><br>
+		
+		<label for='mensagem'>Mensagem:</label><br>
+		<textarea id='mensagem' name='mensagem' rows='8' cols='60' maxlength='300' placeholder='Digite sua mensagem'></textarea>
+		
+		<input type='submit' value='Enviar'>
+	
+		<table aling='top'>
+			<tr>
+				<td>Telefone de contato: (31) 98445-2777</td><td> <img src='imagens/zap.jpg'
+																		width='48'
+																		height='48'></td> 
+			</tr>
+			<tr>
+				<td> Email: adventureland@land.com</td> <td> <img src='imagens/flavicon.webp'
+																width='36'
+																height='36'></td>
+			</tr>
+			<tr>
+				<td> Instagram: Adventure_Land </td> <td> <img src='imagens/insta.png'
+																width='36'
+																height='36'></td>
+			</tr>	
+		</table>
+		
+	<!--Botão voltar-->
+	<h3><a href='index.html'><center>Voltar para página inicial</center></a></h3>
+	
+	</body>	
+</html>
